@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Profile</title>
+    <title>Personal-profile website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>ELISHA DOMINIC</h1>   
+    <header>
+        <h1>ELISHA DOMINIC</h1>
+    </header>
+    <img id="smallImage" src="./IMGselfie.jpg" alt="Small image" class="smallImage">
+    <section id="skills">
+        <h2>Skillset</h2>
+        <ul>
+            <li>Front-end Development</li>
+            <li>Back-end Development</li>
+            <li>Database Management</li>
+            <li>UI/UX Design</li>
+            <li>Mobile App Development</li>
+        </ul>
+    </section>
+    <section id="About">
+        <h2>About Me</h2>
+        <p>Im super passionate about creating inovative solutions in tech.</p>
+    </section>
+    <section id="education">
+        <h2>Educational Background</h2>
+        <p>Completed the Moringa School Full Time Software Engineering program.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><a href="mailto:elishadominic74@gmail.com">Email</a></p>
+        <p>Phone: +254 708 708 894</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </section>
+    <footer>
+        <p>&copy; 2023 elishadominic</p>
+    </footer>
+    <button id="myButton">Click</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let button = document.getElementById("myButton");
+            button.addEventListener("click", function() {
+                alert("Dream big and dare to fail.");
+            });
+        });
+    </script>
 </body>
 </html>
